@@ -17,17 +17,20 @@ box-sizing: border-box;
 }
 .pipe{
     position: absolute;
-    bottom: 37px;
+    bottom: 0px;
     width: 80px;
-right: 80px;
-    top:410px;
-    animation: pipe-animation infinite 5s linear;
+    left:460;
+    right: 80px;
+    top: 384px;
+   animation: pipe-animation infinite 4s linear;
+    
+    
 }
 
 .mario{
     width: 180px;
     position: absolute;
-    bottom:37px;
+    bottom:0px;
     right: 80%;
     top:310px;
     
@@ -37,7 +40,7 @@ right: 80px;
         animation: jump 1200ms ease-out;
     }
     .clouds{
-        width: 400px;
+        width: 500px;
         position: absolute;
         top:110px;
         left: repeat;
