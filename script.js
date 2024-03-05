@@ -24,8 +24,8 @@ const checkCollision = () => {
 
         mario.style.bottom = `${marioPosition}px`;
         
-        mario.src = "/Imagens/game-over.png";
-        mario.style.width = "95px";
+        mario.src = "Imagens/game-over.png";
+        mario.style.width = "75px";
         mario.style.marginLeft = "55px";
 
         clearInterval(loop);
