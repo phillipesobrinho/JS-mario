@@ -13,11 +13,12 @@ const checkCollision = () => {
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
 
-    if (pipePosition <=  460 && pipePosition > 0 && marioPosition < 38) {
+    const pipeHeight = 50;
+
+    if (pipePosition <=  350 && pipePosition >250  &&  marioPosition < 350) {
         pipe.style.animation = "none";
 
         pipe.style.left = `${pipePosition}px`;
-
 
 
         mario.style.animation = "none";
@@ -28,7 +29,7 @@ const checkCollision = () => {
         mario.style.width = "75px";
         mario.style.marginLeft = "55px";
 
-        clearInterval(loop);
+       clearInterval(loop);
     }
 
     requestAnimationFrame(checkCollision);
