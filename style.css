@@ -19,11 +19,10 @@ box-sizing: border-box;
     position: absolute;
     bottom: 0px;
     width: 80px;
-    left:460;
     right: 80px;
     top: 384px;
-   animation: pipe-animation infinite 4s linear;
-    
+    animation: pipe-animation infinite 4s linear;
+   
     
 }
 
@@ -37,7 +36,7 @@ box-sizing: border-box;
     }   
 
     .jump{
-        animation: jump 1200ms ease-out;
+        animation: jump-animation 1000ms ease-out;
     }
     .clouds{
         width: 500px;
@@ -46,7 +45,7 @@ box-sizing: border-box;
         left: repeat;
         animation: clouds-animation 10s infinite linear;
     }
- 
+   
     @keyframes clouds-animation{
         from{
      right:-20%;
@@ -73,30 +72,25 @@ right: 100%;
 
 }
 
-@keyframes jump{
-
-0%{
-    bottom: 37px;
-
-}
-
-40%{
-    top: 50px;
-
-}
-50%{
-    top: 50px;
-}
-80%{
-    top: 50px;
-}
-90%{
-    top: 50px;
-}
-
-100%{
-    bottom:37%;
-}
-}
-
+@keyframes jump-animation {
+    0% {
+      bottom: 37px;
+    }
+  
+    30%,
+    40%,
+    50%,
+    70%,
+    96% {
+      top: 50px; /* Ajuste a altura desejada */
+    }
+  
+    80% {
+      top: 60px; /* Ajuste a altura desejada */
+    }
+  
+    100% {
+      bottom: 37%;
+    }
+  }
 
