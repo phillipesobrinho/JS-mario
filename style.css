@@ -29,7 +29,7 @@ box-sizing: border-box;
 .mario{
     width: 160px;
     position: absolute;
-    bottom:37px;
+    bottom:0px;
     left: 350px;
     top:330px;
     

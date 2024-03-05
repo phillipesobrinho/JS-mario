@@ -13,11 +13,10 @@ const checkCollision = () => {
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
 
-    const pipeHeight = 50;
 
-    if (pipePosition <=  350 && pipePosition >250  &&  marioPosition < 350) {
+
+    if (pipePosition <=  350 && pipePosition  > 0 &&  marioPosition < 0) {
         pipe.style.animation = "none";
-
         pipe.style.left = `${pipePosition}px`;
 
 
@@ -25,6 +24,8 @@ const checkCollision = () => {
 
         mario.style.bottom = `${marioPosition}px`;
         
+
+
         mario.src = "Imagens/game-over.png";
         mario.style.width = "75px";
         mario.style.marginLeft = "55px";
