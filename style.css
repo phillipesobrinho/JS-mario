@@ -17,7 +17,7 @@ box-sizing: border-box;
 }
 .pipe{
     position: absolute;
-    bottom: 0px;
+    bottom: 37px;
     width: 80px;
     right: 80px;
     top: 384px;
@@ -29,7 +29,7 @@ box-sizing: border-box;
 .mario{
     width: 180px;
     position: absolute;
-    bottom:0px;
+    bottom:37px;
     right: 80%;
     top:310px;
     
@@ -74,7 +74,7 @@ right: 100%;
 
 @keyframes jump-animation {
     0% {
-      bottom: 37px;
+      bottom:37px;
     }
   
     30%,
@@ -90,7 +90,7 @@ right: 100%;
     }
   
     100% {
-      bottom: 37%;
+      bottom:37px;
     }
   }
 
