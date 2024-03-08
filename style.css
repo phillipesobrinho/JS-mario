@@ -17,11 +17,11 @@ box-sizing: border-box;
 }
 .pipe{
     position: absolute;
-    bottom: 37px;
-    width: 80px;
-    right
-    left:250px;
-    top: 384px;
+    bottom:27px;
+    width: 60px;
+    right:auto;
+    left:-1;
+    top: 410px;
     animation: pipe-animation infinite 4s linear;
   
     
@@ -30,7 +30,8 @@ box-sizing: border-box;
 .mario{
     width: 160px;
     position: absolute;
-    bottom:37px;
+    bottom:330px;
+    right:10px;
     left: 130px;
     top:330px;
     
