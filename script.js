@@ -8,21 +8,22 @@ const jump = () => {
         mario.classList.remove("jump");
     }, 500);
 }
+document.addEventListener("keydown", jump);
 
 const checkCollision = () => {
     const pipePosition = pipe.offsetLeft;
-    const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
+    const marioPosition = +window.getComputedStyle(mario).left.replace("px", "");
 
 
 
-    if (pipePosition <=  350 && pipePosition  > 0 &&  marioPosition < 0) {
+    if (pipePosition <=  250 && pipePosition  > 250 &&  marioPosition < 130) {
         pipe.style.animation = "none";
         pipe.style.left = `${pipePosition}px`;
 
 
         mario.style.animation = "none";
 
-        mario.style.bottom = `${marioPosition}px`;
+        mario.style.left = `${marioPosition}px`;
         
 
 
@@ -39,4 +40,3 @@ const checkCollision = () => {
 // Iniciar a verificação de colisão
 requestAnimationFrame(checkCollision);
 
-document.addEventListener("keydown", jump);
