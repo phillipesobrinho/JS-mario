@@ -30,7 +30,7 @@ const checkCollision = () => {
     if (
         !isJumping &&
         marioBottom <= pipeTop &&
-        marioBottom + 200 >= pipeTop && // Considere a altura total do Mario após o pulo
+        marioBottom +80<= pipeTop && // Considere a altura total do Mario após o pulo
         marioPosition + marioWidth >= pipePosition &&
         marioPosition <= pipePosition + pipeWidth
     ) {
